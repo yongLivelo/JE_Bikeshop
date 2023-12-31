@@ -1,61 +1,384 @@
 * {
-  scroll-behavior: smooth;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
   box-sizing: border-box;
-  overflow: hidden;
+  overflow-x: hidden;
   text-decoration: none;
+  color: white;
+
+  /* color pallette */
+  --color1: 33, 37, 41;
+  --color2: 108, 117, 124;
+  --color2: 88, 93, 96;
+  --color3: 222, 226, 230;
 }
 
-header {
-  position: fixed;
-  font-size: 3rem;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  z-index: 2;
   display: flex;
   justify-content: space-evenly;
-  background-color: rgba(172, 172, 172, 0.404);
-  align-items: center;
+  position: fixed;
   height: 100px;
   width: 100vw;
-  z-index: 1;
+  background-color: rgb(var(--color1), 0.6);
+  z-index: 0;
+  align-items: center;
+  -webkit-backface-visibility: hidden;
+}
+
+.nav-logo {
+  width: 100px;
+}
+
+.nav-logo-image {
+  width: 100%;
+}
+
+.nav-buttons {
+  display: flex;
+}
+
+.nav-buttons * {
+  padding: 40px 20px;
+  font-size: 2rem;
+  transition: all 0.444s;
+}
+
+.nav-buttons *:hover {
+  color: black;
+  background-color: rgb(112, 112, 112);
+}
+
+.nav-search {
+  position: relative;
+  overflow-y: hidden;
+}
+
+@keyframes biking {
+  0% {
+    left: 0;
+  }
+
+  60% {
+    left: 100px;
+  }
+
+  100% {
+    left: 0;
+  }
+}
+
+.nav-search-bike {
+  pointer-events: none;
+  z-index: 0;
+  position: absolute;
+  width: 100px;
+  left: 10;
+  top: 10px;
+  animation: biking ease-in-out 1s infinite alternate;
+}
+
+.nav-search-input {
+  transition: all 0.444s;
+  height: 64px;
+  width: 100%;
+  margin-right: 50px;
+  border-radius: 10px;
+  font-size: 1.4rem;
+  padding: 10px;
+}
+
+.nav-search-input:focus {
+  background-color: black;
+  border: none;
+}
+
+.YE:focus-within ~ .nav-search-bike {
+  display: none;
 }
 
 .page {
   position: absolute;
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  z-index: -1;
+}
+
+#info {
+  background-color: rgb(var(--color3));
 }
 
 #home {
 }
-
-.home-bg {
-  position: absolute;
-  z-index: -1;
-  width: 100%;
-  filter: blur(4px) brightness(0.4);
-}
-
 .welcome {
-  color: rgb(255, 255, 255);
-  width: 60%;
+  height: 1000px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  position: relative;
 }
 
-.welcome h1 {
+.welcome-bg {
+  width: 100%;
+  object-fit: cover;
+  filter: blur(4px) brightness(0.7);
+}
+
+.welcome-text {
+  text-align: center;
+  margin: 100px;
+  top: 6%;
+  font-size: 4.4rem;
   position: absolute;
-  font-size: 8rem;
-  margin: 10%;
+}
+
+.about_us {
+  height: auto;
+  overflow: hidden;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: grid;
+  background: linear-gradient(
+    52deg,
+    rgba(var(--color1)) 0%,
+
+    rgba(var(--color3)) 100%
+  );
+  grid-template-columns: 1fr;
+  column-gap: 10px;
+  row-gap: 5px;
+}
+
+.main_offers {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.sub_offers {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.offer {
+  height: 800px;
+  position: relative;
+  overflow: hidden;
+}
+
+.offer-text,
+.offer-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 500px;
+  transition: all 0.4s;
+}
+
+.offer-img {
+  object-fit: cover;
+  border-radius: 100px;
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.66);
+}
+
+.offer-text {
+  text-align: center;
+  opacity: 0;
+  padding: 30px;
+  top: 500px;
+  font-size: 2rem;
+}
+
+.offer-text * {
+  margin-bottom: 20px;
+}
+
+.offer:hover .offer-img {
+  filter: brightness(0.444) blur(5px);
+}
+
+.offer:hover .offer-text {
+  opacity: 1;
 }
 
 #products {
   left: 100%;
-  background-color: blanchedalmond;
 }
 
-#contact {
+#info {
+  top: 0;
   left: 200%;
-  background-color: rgb(228, 137, 0);
+  background-color: rgb(var(--color2));
+  scroll-padding-left: 5000px;
 }
 
-.page > *:first-child {
-  margin-top: 100px;
+.location {
+  overflow: hidden;
+  display: flex;
+  height: 1200px;
+  position: relative;
+}
+
+.location_bg {
+  position: relative;
+  width: 100%;
+  height: 1200px;
+  object-fit: cover;
+  position: absolute;
+}
+
+.location_icon {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -80%);
+  width: 5%;
+  height: 120px;
+  overflow: visible;
+  object-fit: cover;
+  transition: all 0.6s;
+  z-index: 100;
+  filter: opacity(0.8);
+  position: absolute;
+  padding: 20px;
+  box-sizing: content-box;
+}
+
+.location_icon:hover {
+  /* width: 5%; */
+  height: 40%;
+  transform: translate(-50%, -90%);
+}
+
+.location_icon_container:hover ~ .location_address {
+  opacity: 1;
+}
+
+.location_text {
+  position: absolute;
+  font-size: 2.3rem;
+  top: 150px;
+  width: 30%;
+  text-align: center;
+  right: 0;
+  overflow: visible;
+  margin-right: 100px;
+  margin-top: 5%;
+}
+
+.location_text * {
+  overflow: visible;
+  text-shadow: 7px 1px 12px rgba(0, 0, 0, 0.61);
+  color: black;
+  margin-bottom: 50px;
+}
+
+.location_address {
+  border: 1px black solid;
+  background-color: rgb(var(--color3));
+  font-size: 2.4rem;
+  padding: 30px;
+  width: 30%;
+  border-radius: 20px;
+  margin: 30px;
+  position: absolute;
+  top: 150px;
+  left: 10px;
+  color: black;
+  opacity: 0;
+  transition: all 1s;
+}
+
+.contact {
+  padding-top: 100px;
+  position: relative;
+  padding-bottom: 100px;
+  height: auto;
+  background-color: rgb(var(--color1));
+  color: black;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 10px;
+}
+
+.social-icon-img {
+  width: 100px;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.contacts_others {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  column-gap: 50px;
+}
+
+.contact_other {
+  text-align: center;
+}
+.contact_icon {
+  width: 150px;
+}
+
+.contact_text {
+}
+
+.contacts_us {
+  margin-left: 10%;
+}
+
+.contact-title {
+  font-size: 5rem;
+  margin-bottom: 10px;
+}
+
+.contact_form {
+  display: flex;
+  border-radius: 10px;
+  background-color: rgb(var(--color2));
+  padding: 30px;
+  width: fit-content;
+}
+
+.contact_input {
+  margin-bottom: 10px;
+  padding: 20px;
+  width: auto;
+  height: 100%;
+  color: black;
+}
+
+.contact_1 {
+  width: 300px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact_submit {
+  border-radius: 10px;
+  width: 100px;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.contact_2 {
+  padding: 20px;
+  margin-left: 20px;
+  width: 400px;
+  height: 200px;
+  color: black;
 }

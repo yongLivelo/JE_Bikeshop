@@ -7,20 +7,211 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <div id="btn-home"><a href="#home">HOME</a></div>
-      <div id="btn-products"><a href="#products">PRODUCTS</a></div>
-      <div id="btn-contact"><a href="#contact">CONTACT</a></div>
-    </header>
+    <nav>
+      <div class="nav-logo">
+        <a href="#home"
+          ><img class="nav-logo-image" src="Images/logo.png" alt=""
+        /></a>
+      </div>
+      <div class="nav-buttons">
+        <a id="btn-home" href="#home">HOME</a>
+        <a id="btn-products" href="#products">PRODUCTS</a>
+        <a id="btn-contact" href="#info">CONTACT</a>
+      </div>
+      <div class="nav-search">
+        <label class="YE">
+          <input class="nav-search-input" type="text"
+        /></label>
+        <img class="nav-search-bike" src="Images/bike.png" alt="" />
+      </div>
+    </nav>
+
     <div class="page" id="home">
-      <img class="home-bg" src="/Images/background.jpg" />
-      <div class="welcome"><h1>JE BIKESHOP</h1></div>
+      <div class="welcome">
+        <img class="welcome-bg" src="Images/background.jpg" alt="" />
+        <div class="welcome-text">
+          <h1 class="welcome-name">JE BIKESHOP</h1>
+          <p class="welcome-motto">
+            "Ride into Adventure, Roll with Quality &#8212; Your Journey Starts
+            now!"
+          </p>
+        </div>
+      </div>
+      <div class="about_us">
+        <div class="main_offers">
+          <div class="offer offer-what">
+            <img class="offer-img" src="Images/offer-item_1.jpg" alt="" />
+            <div class="offer-text">
+              <h1>STORE</h1>
+              <p>You can order at us via online or walk-in</p>
+              <a href="#info" style="display: inline-block"
+                ><p
+                  style="
+                    color: rgb(0, 238, 255);
+                    background-color: rgb(var(--color2), 0.8);
+                    padding: 20px;
+
+                    border-radius: 10px;
+                  "
+                >
+                  click here
+                </p></a
+              >
+            </div>
+          </div>
+          <div class="offer offer-what">
+            <img
+              style="object-position: bottom"
+              class="offer-img"
+              src="Images/offer-item_2.jpg"
+              alt=""
+            />
+            <div class="offer-text">
+              <h1>SERVICES</h1>
+              <p>
+                If you have any issues with your bike, we are here assist you
+                the cater you to have a better biking experience at an
+                affordable prices
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="sub_offers">
+          <div class="offer offer-items">
+            <img class="offer-img" src="Images/offer-item_3.jpg" alt="" />
+            <div class="offer-text">
+              <h1>QUALITY</h1>
+              <p>
+                We are here to ensure you that we have top-quality and original
+                products
+              </p>
+              <a href="#"></a>
+              <p></p>
+            </div>
+          </div>
+          <div class="offer offer-services">
+            <img class="offer-img" src="Images/offer-item_4.jpg" alt="" />
+            <div class="offer-text">
+              <h1>REPAIRS</h1>
+              <p>
+                Is your bike damaged? Want an upgrade? Our talented mechanics
+                will come and handle that
+              </p>
+            </div>
+          </div>
+          <div class="offer offer-shit">
+            <img class="offer-img" src="Images/offer-item_5.jpg" alt="" />
+            <div class="offer-text">
+              <h1>REFUND</h1>
+              <p>
+                No return refund unless there are already is a damage after
+                opening
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
     <div class="page" id="products">
-      <h1>ASD</h1>
+      <h1>PRODUCTS</h1>
     </div>
-    <div class="page" id="contact">
-      <h1>ASD</h1>
+
+    <div class="page" id="info">
+      <div class="location">
+        <img class="location_bg" src="Images/Location.png" alt="" />
+        <a
+          class="location_icon_container"
+          href="https://maps.app.goo.gl/bd9ceQ4dpPD2ctQs8"
+        >
+          <img class="location_icon" src="Images/location-icon.png" alt=""
+        /></a>
+
+        <div class="location_text">
+          <h1 class="located">WE ARE LOCATED HERE</h1>
+          <p class="open">OPEN AT 7:00AM to 12:00PM</p>
+        </div>
+        <div class="location_address">
+          Albay St Block 1 Lot 2, Cainta, 1900 Rizal
+        </div>
+      </div>
+
+      <div class="contact">
+        <div class="social-media">
+          <a class="social-icon" href="https://www.facebook.com/JEBikeShop"
+            ><img src="Images/facebook.png" alt="" class="social-icon-img"
+          /></a>
+          <a class="social-icon" href="https://www.instagram.com/jebikeshop/"
+            ><img src="" alt="" /><img
+              class="social-icon-img"
+              src="Images/instagram.png"
+              alt=""
+          /></a>
+          <a class="social-icon" href="https://www.tiktok.com/@jebikeshop"
+            ><img src="" alt="" /><img
+              class="social-icon-img"
+              src="Images/tik-tok.png"
+              alt=""
+          /></a>
+          <a
+            class="social-icon"
+            href="https://www.lazada.com.ph/shop/je-bikeshop/?path=index.htm"
+            ><img src="" alt="" /><img
+              class="social-icon-img"
+              src="Images/lazada.png"
+              alt=""
+              .CONTACT_tex
+          /></a>
+          <a class="social-icon" href="https://shopee.ph/jedlivelo"
+            ><img src="" alt="" /><img
+              class="social-icon-img"
+              src="Images/shoppee.jpg"
+              alt=""
+          /></a>
+        </div>
+
+        <div class="contacts_others">
+          <div class="email contact_other">
+            <img class="contact_icon" src="Images/email.png" alt="" />
+            <p class="contact_text">livelojed0622@gmail.com</p>
+          </div>
+          <div class="phone contact_other">
+            <img class="contact_icon" src="Images/phone.png" alt="" />
+            <p class="contact_text">09491111957</p>
+          </div>
+        </div>
+
+        <div class="contacts_us">
+          <h1 class="contact-title">Contact Us</h1>
+          <form class="contact_form" action="">
+            <div class="contact_1">
+              <input class="contact_input" type="text" placeholder="Name" />
+              <input
+                class="contact_input"
+                type="text"
+                name=""
+                id=""
+                placeholder="Email"
+              />
+              <input
+                class="contact_input contact_submit"
+                type="submit"
+                name=""
+                id=""
+              />
+            </div>
+            <textarea
+              class="contact_2"
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              \
+              placeholder="Put your comment here"
+            ></textarea>
+          </form>
+        </div>
+      </div>
     </div>
   </body>
 </html>
