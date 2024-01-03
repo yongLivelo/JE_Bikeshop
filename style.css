@@ -295,11 +295,12 @@ section {
 }
 
 .customer-slider img {
+  object-position: left;
   aspect-ratio: 16 / 9;
   overflow-x: visible;
   width: 1000px;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .customer-text {
