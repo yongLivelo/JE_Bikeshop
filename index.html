@@ -2,33 +2,42 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="height=device-height, 
+    width=device-width, initial-scale=1.0, 
+    minimum-scale=1.0, maximum-scale=1.0, 
+    user-scalable=no, target-densitydpi=device-dpi"
+    />
     <title>JE Bikeshop</title>
+    <link rel="icon" href="Images/logo.png" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!--// Navigation Bar -->
     <nav>
       <div class="nav-logo">
         <a href="#home"
-          ><img class="nav-logo-image" src="Images/logo.png" alt=""
+          ><img class="nav-logo-image" src="images/logo.png" alt=""
         /></a>
       </div>
       <div class="nav-buttons">
-        <a id="btn-home" href="#home">HOME</a>
-        <a id="btn-products" href="#products">PRODUCTS</a>
-        <a id="btn-contact" href="#info">CONTACT</a>
+        <a class="nav-button" href="#home">HOME</a>
+        <a class="nav-button" href="#products">PRODUCTS</a>
+        <a class="nav-button" href="#info">INFO</a>
       </div>
       <div class="nav-search">
-        <label class="YE">
-          <input class="nav-search-input" type="text"
-        /></label>
-        <img class="nav-search-bike" src="Images/bike.png" alt="" />
+        <input class="nav-search-input" type="text" />
+        <img class="nav-search-bike" src="images/bike.png" alt="" />
       </div>
     </nav>
+    <!-- Navigation Bar //-->
 
-    <div class="page" id="home">
-      <div class="welcome">
-        <img class="welcome-bg" src="Images/background.jpg" alt="" />
+    <!--// Home Page -->
+    <section id="home">
+      <!--// Welcome -->
+      <header class="welcome">
+        <img class="welcome-bg" src="images/Home/welcome.jpg" alt="" />
         <div class="welcome-text">
           <h1 class="welcome-name">JE BIKESHOP</h1>
           <p class="welcome-motto">
@@ -36,62 +45,64 @@
             now!"
           </p>
         </div>
-      </div>
-      <div class="about_us">
-        <div class="main_offers">
-          <div class="offer offer-what">
-            <img class="offer-img" src="Images/offer-item_1.jpg" alt="" />
-            <div class="offer-text">
+      </header>
+      <!-- Welcome //-->
+
+      <!--// About Us -->
+      <div class="about-us">
+        <div class="main-abouts">
+          <div class="about">
+            <img
+              class="about-img"
+              src="images/Home/about-us/main-about1.jpg"
+              alt=""
+            />
+            <div class="about-text">
               <h1>STORE</h1>
               <p>You can order at us via online or walk-in</p>
-              <a href="#info" style="display: inline-block"
-                ><p
-                  style="
-                    color: rgb(0, 238, 255);
-                    background-color: rgb(var(--color2), 0.8);
-                    padding: 20px;
-
-                    border-radius: 10px;
-                  "
-                >
-                  click here
-                </p></a
+              <a href="#info" style="display: inline-block">
+                <p class="click-here">click here</p></a
               >
             </div>
           </div>
-          <div class="offer offer-what">
+          <div class="about">
             <img
               style="object-position: bottom"
-              class="offer-img"
-              src="Images/offer-item_2.jpg"
+              class="about-img"
+              src="images/Home/about-us/main-about2.jpg"
               alt=""
             />
-            <div class="offer-text">
+            <div class="about-text">
               <h1>SERVICES</h1>
               <p>
-                If you have any issues with your bike, we are here assist you
-                the cater you to have a better biking experience at an
-                affordable prices
+                If you have any issues with your bike, we are here to assist you
+                to have a better biking experience at affordable prices
               </p>
             </div>
           </div>
         </div>
-        <div class="sub_offers">
-          <div class="offer offer-items">
-            <img class="offer-img" src="Images/offer-item_3.jpg" alt="" />
-            <div class="offer-text">
+
+        <div class="sub-abouts">
+          <div class="about">
+            <img
+              class="about-img"
+              src="images/Home/about-us/sub-about1.jpg"
+              alt=""
+            />
+            <div class="about-text">
               <h1>QUALITY</h1>
-              <p>
-                We are here to ensure you that we have top-quality and original
-                products
-              </p>
+              <p>We ensure you to give top-quality and original products</p>
               <a href="#"></a>
               <p></p>
             </div>
           </div>
-          <div class="offer offer-services">
-            <img class="offer-img" src="Images/offer-item_4.jpg" alt="" />
-            <div class="offer-text">
+          <div class="about">
+            <img
+              class="about-img"
+              src="images/Home/about-us/sub-about2.jpg"
+              alt=""
+            />
+            <div class="about-text">
               <h1>REPAIRS</h1>
               <p>
                 Is your bike damaged? Want an upgrade? Our talented mechanics
@@ -99,58 +110,1137 @@
               </p>
             </div>
           </div>
-          <div class="offer offer-shit">
-            <img class="offer-img" src="Images/offer-item_5.jpg" alt="" />
-            <div class="offer-text">
-              <h1>REFUND</h1>
-              <p>
-                No return refund unless there are already is a damage after
-                opening
-              </p>
+          <div class="about">
+            <img
+              class="about-img"
+              src="images/Home/about-us/sub-about3.jpg"
+              alt=""
+            />
+            <div class="about-text">
+              <h1>POLICY</h1>
+              <p>No return or refund unless it's already damaged</p>
             </div>
           </div>
         </div>
       </div>
-    </div>
+      <!-- About Us //-->
 
-    <div class="page" id="products">
-      <h1>PRODUCTS</h1>
-    </div>
+      <!-- Shop -->
+      <div class="shop">
+        <img class="shop-img" src="images/Home/welcome.jpg" alt="" />
+      </div>
+      <!-- Shop //-->
 
-    <div class="page" id="info">
+      <!--// Customers -->
+      <div class="customers">
+        <div class="customer-slider-frame">
+          <div class="customer-slider">
+            <img src="images/Home/customers/1.jpg" alt="" />
+            <img src="images/Home/customers/2.jpg" alt="" />
+            <img src="images/Home/customers/3.jpg" alt="" />
+          </div>
+        </div>
+        <div class="customer-text">
+          <h1 class="customer-text-content">WE THANK OUR VALUED COSTUMERS</h1>
+        </div>
+      </div>
+
+      <!-- Customers //-->
+
+      <!--// See Products and Info -->
+      <footer class="see-others">
+        <a href="#products" style="overflow: visible">
+          <svg
+            class="see-others-arrow"
+            data-name="1-Arrow Up"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 32 32"
+            fill="white"
+          >
+            <path
+              d="m26.71 10.29-10-10a1 1 0 0 0-1.41 0l-10 10 1.41 1.41L15 3.41V32h2V3.41l8.29 8.29z"
+            />
+          </svg>
+        </a>
+
+        <div class="see-other-text">
+          <p>
+            See our
+            <a href="#products" class="see-other-products">PRODUCTS</a> or
+            <a href="#info" class="see-other-info">INFORMATION</a> about our
+            shop
+          </p>
+        </div>
+      </footer>
+      <!-- See Products and Info //-->
+    </section>
+    <!-- Home Page //-->
+
+    <!--// Products Page -->
+    <section id="products">
+      <!--// Products Navigation  -->
+      <div class="products-nav">
+        <a href="#best-sellers">
+          <div class="product-nav-btn">
+            <p class="product-nav-text">BEST SELLERS</p>
+          </div>
+        </a>
+        <a href="#parts">
+          <div class="product-nav-btn">
+            <p class="product-nav-text">Parts</p>
+            <img class="product-nav-icon" src="images/Info/bike.png" alt="i" />
+          </div>
+        </a>
+        <a href="#accessories">
+          <div class="product-nav-btn">
+            <p class="product-nav-text">Accessories</p>
+            <img
+              class="product-nav-icon"
+              src="images/Info/accessories.png"
+              alt=""
+            />
+          </div>
+        </a>
+      </div>
+
+      <!-- Products Navigation //-->
+      <!--// Products List -->
+      <div class="products-lists">
+        <!--// Best Sellers -->
+        <div class="products-best-sellers" id="best-sellers">
+          <div class="products-best-sellers-text">BEST SELLERS</div>
+          <div class="product">
+            <div class="product-img-container">
+              <img
+                class="product-img"
+                src="images/Products/igsports.jpg"
+                alt=""
+              />
+            </div>
+            <div class="product-description">
+              <p class="product-price">₱1,950</p>
+              <p class="product-name">IG Sports Speedometer</p>
+            </div>
+
+            <div class="product-links">
+              <div class="product-links-row">
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="images/Info/facebook.png"
+                    alt=""
+                /></a>
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="Images/Info/shoppee.png"
+                    alt=""
+                /></a>
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="Images/Info/lazada.png"
+                    alt=""
+                /></a>
+              </div>
+
+              <div class="product-links-row">
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="images/Info/tik-tok.png"
+                    alt=""
+                /></a>
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="Images/Info/instagram.png"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-img-container">
+              <img
+                class="product-img"
+                src="Images/Products/ltwooa7.jpg"
+                alt=""
+              />
+            </div>
+            <div class="product-description">
+              <p class="product-price">₱1,099</p>
+              <p class="product-name">LTWOO A7 RD and Shifter</p>
+            </div>
+            <div class="product-links">
+              <div class="product-links-row">
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="images/Info/facebook.png"
+                    alt=""
+                /></a>
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="Images/Info/shoppee.png"
+                    alt=""
+                /></a>
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="Images/Info/lazada.png"
+                    alt=""
+                /></a>
+              </div>
+
+              <div class="product-links-row">
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="images/Info/tik-tok.png"
+                    alt=""
+                /></a>
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="Images/Info/instagram.png"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-img-container">
+              <img class="product-img" src="images/Products/m6100.jpg" alt="" />
+            </div>
+            <div class="product-description">
+              <p class="product-price">₱899</p>
+              <p class="product-name">M6100 DEORE 12 SPEED</p>
+            </div>
+            <div class="product-links">
+              <div class="product-links-row">
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="images/Info/facebook.png"
+                    alt=""
+                /></a>
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="Images/Info/shoppee.png"
+                    alt=""
+                /></a>
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="Images/Info/lazada.png"
+                    alt=""
+                /></a>
+              </div>
+
+              <div class="product-links-row">
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="images/Info/tik-tok.png"
+                    alt=""
+                /></a>
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="Images/Info/instagram.png"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Best Sellers //-->
+        <!--// PARTS -->
+        <div class="products-list" id="parts">
+          <div class="products-list-text">PARTS</div>
+          <div class="product">
+            <div class="product-img-container">
+              <img
+                class="product-img"
+                src="Images/Products/parts/1.jpg"
+                alt=""
+              />
+            </div>
+            <div class="product-description">
+              <p class="product-price">₱350</p>
+              <p class="product-name">SHIMANO 3 X 7 COMBO SHIFTER</p>
+            </div>
+
+            <div class="product-links">
+              <div class="product-links-row">
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="images/Info/facebook.png"
+                    alt=""
+                /></a>
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="Images/Info/shoppee.png"
+                    alt=""
+                /></a>
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="Images/Info/lazada.png"
+                    alt=""
+                /></a>
+              </div>
+
+              <div class="product-links-row">
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="images/Info/tik-tok.png"
+                    alt=""
+                /></a>
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="Images/Info/instagram.png"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-img-container">
+              <img
+                class="product-img"
+                src="Images/Products/parts/2.jpg"
+                alt=""
+              />
+            </div>
+            <div class="product-description">
+              <p class="product-price">₱2,499</p>
+              <p class="product-name">
+                CANYON MTB AIR SHOCK FORK 29ER GOLD STANCIONS
+              </p>
+            </div>
+
+            <div class="product-links">
+              <div class="product-links-row">
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="images/Info/facebook.png"
+                    alt=""
+                /></a>
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="Images/Info/shoppee.png"
+                    alt=""
+                /></a>
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="Images/Info/lazada.png"
+                    alt=""
+                /></a>
+              </div>
+
+              <div class="product-links-row">
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="images/Info/tik-tok.png"
+                    alt=""
+                /></a>
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="Images/Info/instagram.png"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-img-container">
+              <img
+                class="product-img"
+                src="Images/Products/parts/3.jpg"
+                alt=""
+              />
+            </div>
+            <div class="product-description">
+              <p class="product-price">₱450</p>
+              <p class="product-name">SHIMANO HG 54 CHAIN 10 S</p>
+            </div>
+
+            <div class="product-links">
+              <div class="product-links-row">
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="images/Info/facebook.png"
+                    alt=""
+                /></a>
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="Images/Info/shoppee.png"
+                    alt=""
+                /></a>
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="Images/Info/lazada.png"
+                    alt=""
+                /></a>
+              </div>
+
+              <div class="product-links-row">
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="images/Info/tik-tok.png"
+                    alt=""
+                /></a>
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="Images/Info/instagram.png"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-img-container">
+              <img
+                class="product-img"
+                src="Images/Products/parts/4.jpg"
+                alt=""
+              />
+            </div>
+            <div class="product-description">
+              <p class="product-price">₱450</p>
+              <p class="product-name">SHIMANO HG 54 CHAIN 10 S</p>
+            </div>
+
+            <div class="product-links">
+              <div class="product-links-row">
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="images/Info/facebook.png"
+                    alt=""
+                /></a>
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="Images/Info/shoppee.png"
+                    alt=""
+                /></a>
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="Images/Info/lazada.png"
+                    alt=""
+                /></a>
+              </div>
+
+              <div class="product-links-row">
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="images/Info/tik-tok.png"
+                    alt=""
+                /></a>
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="Images/Info/instagram.png"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-img-container">
+              <img
+                class="product-img"
+                src="Images/Products/parts/5.jpg"
+                alt=""
+              />
+            </div>
+            <div class="product-description">
+              <p class="product-price">₱750</p>
+              <p class="product-name">UNO STEM FLOSSY</p>
+            </div>
+
+            <div class="product-links">
+              <div class="product-links-row">
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="images/Info/facebook.png"
+                    alt=""
+                /></a>
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="Images/Info/shoppee.png"
+                    alt=""
+                /></a>
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="Images/Info/lazada.png"
+                    alt=""
+                /></a>
+              </div>
+
+              <div class="product-links-row">
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="images/Info/tik-tok.png"
+                    alt=""
+                /></a>
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="Images/Info/instagram.png"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-img-container">
+              <img
+                class="product-img"
+                src="Images/Products/parts/6.jpg"
+                alt=""
+              />
+            </div>
+            <div class="product-description">
+              <p class="product-price">₱1,000</p>
+              <p class="product-name">CARBON HANDLE BARS</p>
+            </div>
+
+            <div class="product-links">
+              <div class="product-links-row">
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="images/Info/facebook.png"
+                    alt=""
+                /></a>
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="Images/Info/shoppee.png"
+                    alt=""
+                /></a>
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="Images/Info/lazada.png"
+                    alt=""
+                /></a>
+              </div>
+
+              <div class="product-links-row">
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="images/Info/tik-tok.png"
+                    alt=""
+                /></a>
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="Images/Info/instagram.png"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-img-container">
+              <img
+                class="product-img"
+                src="Images/Products/parts/7.jpg"
+                alt=""
+              />
+            </div>
+            <div class="product-description">
+              <p class="product-price">₱350</p>
+              <p class="product-name">
+                SAGMIT SIRIUS V 160 MM CARBON FLOATING ROTORS
+              </p>
+            </div>
+
+            <div class="product-links">
+              <div class="product-links-row">
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="images/Info/facebook.png"
+                    alt=""
+                /></a>
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="Images/Info/shoppee.png"
+                    alt=""
+                /></a>
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="Images/Info/lazada.png"
+                    alt=""
+                /></a>
+              </div>
+
+              <div class="product-links-row">
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="images/Info/tik-tok.png"
+                    alt=""
+                /></a>
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="Images/Info/instagram.png"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-img-container">
+              <img
+                class="product-img"
+                src="Images/Products/parts/9.jpg"
+                alt=""
+              />
+            </div>
+            <div class="product-description">
+              <p class="product-price">₱799</p>
+              <p class="product-name">
+                CONTINENTAL ULTRA SPORTS FOLDING TIRE 700 X 28 C
+              </p>
+            </div>
+
+            <div class="product-links">
+              <div class="product-links-row">
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="images/Info/facebook.png"
+                    alt=""
+                /></a>
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="Images/Info/shoppee.png"
+                    alt=""
+                /></a>
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="Images/Info/lazada.png"
+                    alt=""
+                /></a>
+              </div>
+
+              <div class="product-links-row">
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="images/Info/tik-tok.png"
+                    alt=""
+                /></a>
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="Images/Info/instagram.png"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- PARTS //-->
+        <!--// ACCESSORIES -->
+        <div class="products-list" id="accessories">
+          <div class="products-list-text">ACCESORIES</div>
+          <div class="product">
+            <div class="product-img-container">
+              <img
+                class="product-img"
+                src="images/Products/accessories/1.jpg"
+                alt=""
+              />
+            </div>
+            <div class="product-description">
+              <p class="product-price">₱20</p>
+              <p class="product-name">SILICON GRIPS</p>
+            </div>
+
+            <div class="product-links">
+              <div class="product-links-row">
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="images/Info/facebook.png"
+                    alt=""
+                /></a>
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="Images/Info/shoppee.png"
+                    alt=""
+                /></a>
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="Images/Info/lazada.png"
+                    alt=""
+                /></a>
+              </div>
+
+              <div class="product-links-row">
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="images/Info/tik-tok.png"
+                    alt=""
+                /></a>
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="Images/Info/instagram.png"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="product">
+            <div class="product-img-container">
+              <img
+                class="product-img"
+                src="Images/Products/accessories/2.jpg"
+                alt=""
+              />
+            </div>
+            <div class="product-description">
+              <p class="product-price">₱1200</p>
+              <p class="product-name">XOSS G V2 SMART GPS</p>
+            </div>
+
+            <div class="product-links">
+              <div class="product-links-row">
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="images/Info/facebook.png"
+                    alt=""
+                /></a>
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="Images/Info/shoppee.png"
+                    alt=""
+                /></a>
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="Images/Info/lazada.png"
+                    alt=""
+                /></a>
+              </div>
+
+              <div class="product-links-row">
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="images/Info/tik-tok.png"
+                    alt=""
+                /></a>
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="Images/Info/instagram.png"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="product">
+            <div class="product-img-container">
+              <img
+                class="product-img"
+                src="images/Products/accessories/3.jpg"
+                alt=""
+              />
+            </div>
+            <div class="product-description">
+              <p class="product-price">₱899</p>
+              <p class="product-name">GIRO WHITE BICYCLE HELMET</p>
+            </div>
+
+            <div class="product-links">
+              <div class="product-links-row">
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="images/Info/facebook.png"
+                    alt=""
+                /></a>
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="Images/Info/shoppee.png"
+                    alt=""
+                /></a>
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="Images/Info/lazada.png"
+                    alt=""
+                /></a>
+              </div>
+
+              <div class="product-links-row">
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="images/Info/tik-tok.png"
+                    alt=""
+                /></a>
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="Images/Info/instagram.png"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="product">
+            <div class="product-img-container">
+              <img
+                class="product-img"
+                src="images/Products/accessories/4.jpg"
+                alt=""
+              />
+            </div>
+            <div class="product-description">
+              <p class="product-price">₱300</p>
+              <p class="product-name">ROCKBROS BOTTLE CAGE</p>
+            </div>
+
+            <div class="product-links">
+              <div class="product-links-row">
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="images/Info/facebook.png"
+                    alt=""
+                /></a>
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="Images/Info/shoppee.png"
+                    alt=""
+                /></a>
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="Images/Info/lazada.png"
+                    alt=""
+                /></a>
+              </div>
+
+              <div class="product-links-row">
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="images/Info/tik-tok.png"
+                    alt=""
+                /></a>
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="Images/Info/instagram.png"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="product">
+            <div class="product-img-container">
+              <img
+                class="product-img"
+                src="images/Products/accessories/5.jpg"
+                alt=""
+              />
+            </div>
+            <div class="product-description">
+              <p class="product-price">₱250</p>
+              <p class="product-name">ROCKBROS BICYCLE LOCK</p>
+            </div>
+
+            <div class="product-links">
+              <div class="product-links-row">
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="images/Info/facebook.png"
+                    alt=""
+                /></a>
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="Images/Info/shoppee.png"
+                    alt=""
+                /></a>
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="Images/Info/lazada.png"
+                    alt=""
+                /></a>
+              </div>
+
+              <div class="product-links-row">
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="images/Info/tik-tok.png"
+                    alt=""
+                /></a>
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="Images/Info/instagram.png"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="product">
+            <div class="product-img-container">
+              <img
+                class="product-img"
+                src="images/Products/accessories/6.jpg"
+                alt=""
+              />
+            </div>
+            <div class="product-description">
+              <p class="product-price">₱199</p>
+              <p class="product-name">BIKE FRONT LIGHT CYCLING</p>
+            </div>
+
+            <div class="product-links">
+              <div class="product-links-row">
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="images/Info/facebook.png"
+                    alt=""
+                /></a>
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="Images/Info/shoppee.png"
+                    alt=""
+                /></a>
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="Images/Info/lazada.png"
+                    alt=""
+                /></a>
+              </div>
+
+              <div class="product-links-row">
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="images/Info/tik-tok.png"
+                    alt=""
+                /></a>
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="Images/Info/instagram.png"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="product">
+            <div class="product-img-container">
+              <img
+                class="product-img"
+                src="images/Products/accessories/7.jpg"
+                alt=""
+              />
+            </div>
+            <div class="product-description">
+              <p class="product-price">₱299</p>
+              <p class="product-name">HANDLE BAR CYCLING BAG</p>
+            </div>
+
+            <div class="product-links">
+              <div class="product-links-row">
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="images/Info/facebook.png"
+                    alt=""
+                /></a>
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="Images/Info/shoppee.png"
+                    alt=""
+                /></a>
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="Images/Info/lazada.png"
+                    alt=""
+                /></a>
+              </div>
+
+              <div class="product-links-row">
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="images/Info/tik-tok.png"
+                    alt=""
+                /></a>
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="Images/Info/instagram.png"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="product">
+            <div class="product-img-container">
+              <img
+                class="product-img"
+                src="images/Products/accessories/8.jpg"
+                alt=""
+              />
+            </div>
+            <div class="product-description">
+              <p class="product-price">₱150</p>
+              <p class="product-name">SAGMIT EVO 3 BOTTLE</p>
+            </div>
+
+            <div class="product-links">
+              <div class="product-links-row">
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="images/Info/facebook.png"
+                    alt=""
+                /></a>
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="Images/Info/shoppee.png"
+                    alt=""
+                /></a>
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="Images/Info/lazada.png"
+                    alt=""
+                /></a>
+              </div>
+
+              <div class="product-links-row">
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="images/Info/tik-tok.png"
+                    alt=""
+                /></a>
+                <a class="product-link" href=""
+                  ><img
+                    class="product-link-img"
+                    src="Images/Info/instagram.png"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ACCESSORIES //-->
+      </div>
+
+      <!-- Products List //-->
+    </section>
+    <!-- Products Page //-->
+
+    <!--// Information Page -->
+    <section id="info">
+      <!--// Location -->
       <div class="location">
-        <img class="location_bg" src="Images/Location.png" alt="" />
+        <img class="location_bg" src="images/Info/Location.png" alt="" />
         <a
           class="location_icon_container"
           href="https://maps.app.goo.gl/bd9ceQ4dpPD2ctQs8"
         >
-          <img class="location_icon" src="Images/location-icon.png" alt=""
+          <img class="location_icon" src="images/Info/location-icon.png" alt=""
         /></a>
 
         <div class="location_text">
           <h1 class="located">WE ARE LOCATED HERE</h1>
           <p class="open">OPEN AT 7:00AM to 12:00PM</p>
+          <p class="open">MONDAY TO SUNDAY</p>
         </div>
         <div class="location_address">
           Albay St Block 1 Lot 2, Cainta, 1900 Rizal
         </div>
       </div>
+      <!-- Location //-->
 
       <div class="contact">
         <div class="social-media">
           <a class="social-icon" href="https://www.facebook.com/JEBikeShop"
-            ><img src="Images/facebook.png" alt="" class="social-icon-img"
+            ><img src="Images/Info/facebook.png" alt="" class="social-icon-img"
           /></a>
           <a class="social-icon" href="https://www.instagram.com/jebikeshop/"
             ><img src="" alt="" /><img
               class="social-icon-img"
-              src="Images/instagram.png"
+              src="images/Info/instagram.png"
               alt=""
           /></a>
           <a class="social-icon" href="https://www.tiktok.com/@jebikeshop"
             ><img src="" alt="" /><img
               class="social-icon-img"
-              src="Images/tik-tok.png"
+              src="images/Info/tik-tok.png"
               alt=""
           /></a>
           <a
@@ -158,25 +1248,25 @@
             href="https://www.lazada.com.ph/shop/je-bikeshop/?path=index.htm"
             ><img src="" alt="" /><img
               class="social-icon-img"
-              src="Images/lazada.png"
+              src="images/Info/lazada.png"
               alt=""
               .CONTACT_tex
           /></a>
-          <a class="social-icon" href="https://shopee.ph/jedlivelo"
+          <a class="social-icon" href="https://shopee.ph/jedlivelo0622"
             ><img src="" alt="" /><img
               class="social-icon-img"
-              src="Images/shoppee.jpg"
+              src="images/Info/shoppee.png"
               alt=""
           /></a>
         </div>
 
         <div class="contacts_others">
           <div class="email contact_other">
-            <img class="contact_icon" src="Images/email.png" alt="" />
+            <img class="contact_icon" src="images/Info/email.png" alt="" />
             <p class="contact_text">livelojed0622@gmail.com</p>
           </div>
           <div class="phone contact_other">
-            <img class="contact_icon" src="Images/phone.png" alt="" />
+            <img class="contact_icon" src="images/Info/phone.png" alt="" />
             <p class="contact_text">09491111957</p>
           </div>
         </div>
@@ -212,6 +1302,7 @@
           </form>
         </div>
       </div>
-    </div>
+    </section>
+    <!-- Information Page //-->
   </body>
 </html>
