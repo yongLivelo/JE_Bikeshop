@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+
   box-sizing: border-box;
   overflow-x: hidden;
   text-decoration: none;
@@ -135,7 +136,7 @@ section {
 
 .welcome-text {
   text-align: center;
-
+  text-shadow: 4px 3px 21px rgba(0, 0, 0, 1);
   top: 20%;
   font-size: 4.4rem;
   position: absolute;
@@ -145,6 +146,7 @@ section {
 
 /*// About Us */
 .about-us {
+  margin-top: -20px;
   position: relative;
   z-index: 4;
   height: fit-content;
@@ -311,8 +313,11 @@ section {
 }
 
 .customer-text-content {
-  color: black;
-  font-size: 3.4rem;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  color: white;
+  font-size: 4rem;
+  text-shadow: 4px 4px 4px black;
 }
 
 /* Customers //*/
@@ -499,7 +504,7 @@ section {
 
 .products-best-sellers {
   position: relative;
-
+  text-shadow: 4px 4px 4px black;
   border-radius: 20px;
   display: grid;
   column-gap: 40px;
@@ -513,11 +518,15 @@ section {
 }
 
 .products-best-sellers-text {
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  color: orange;
   grid-area: 1 / 1 / 2 / 6;
-  color: black;
-  font-size: 4rem;
+
+  font-size: 5rem;
   position: relative;
-  top: -20px;
+  top: -100px;
   text-align: center;
   font-weight: bold;
 }
